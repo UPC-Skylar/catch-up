@@ -6,14 +6,14 @@ import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css'
-import {Avatar, Button, Card, Drawer, Menu, Toolbar, Tooltip} from "primevue";
+import {Avatar, Button, Card, Drawer, Menu, SelectButton, Toolbar, Tooltip} from "primevue";
 
 const app = createApp(App);
 app.use(i18n)
     .use(PrimeVue, { ripple: true, theme: { preset: Aura }})
     .component('pv-button', Button)
     .component('pv-card', Card)
-    .component('pv-select-button', Button)
+    .component('pv-select-button', SelectButton)
     .component('pv-drawer', Drawer)
     .component('pv-avatar', Avatar)
     .component('pv-menu', Menu)
